@@ -32,25 +32,30 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 1.5rem 1rem;
     background-color: hsl(217, 54%, 11%);
 }
 
 .card {
     background-color: hsl(216, 50%, 16%);
     max-width: 300px;
-    margin: 0 0.8rem;
     padding: 1.2rem;
     border-radius: 0.5rem;
     box-shadow: 0 30px 2px 18px hsl(217, 54%, 10%), 0 20px 5px 55px hsl(220, 45%, 11%);        
 }
 
+.equilibrium-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.6rem;
+}
+
 .img-overlay {
     max-width: 300px;
     min-height: 300px;
-    background-image: url(../img/image-equilibrium.jpg);
-    background-size: cover;
     position: relative;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
 
 .img-overlay::after,
@@ -62,7 +67,7 @@ main {
     position: absolute;
     top: 0;
     left:0;
-    opacity: 0;
+    border-radius: 0.6rem;
 }
 
 .img-overlay:hover::after {
@@ -71,9 +76,9 @@ main {
 }
 
 .img-overlay:hover::before {
-    border-radius: 10px;
     background-color: cyan;
     opacity: 0.6;
+    transition: 0.5s ease-out;
 }
 
 h1 {
