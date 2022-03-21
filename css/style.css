@@ -38,7 +38,7 @@ main {
 .card {
     background-color: hsl(216, 50%, 16%);
     max-width: 300px;
-    margin: 2rem 1rem;
+    margin: 3.5rem 1rem;
     padding: 1.2rem;
     border-radius: 0.5rem;
     box-shadow: 0 30px 2px 18px hsl(217, 54%, 10%), 0 20px 5px 55px hsl(220, 45%, 11%);        
